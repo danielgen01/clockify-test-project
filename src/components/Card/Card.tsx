@@ -28,8 +28,8 @@ const Card: React.FC<cardprops> = ({
   return (
     <section
       className={`Card min-h-[500px] bg-white  border-x-2 border-y-4 ${color}  ${
-        scale ? "lg:h-[550px]" : "lg:h-[500px]"
-      } ${scale ? "lg:scale-105" : ""}`}
+        scale ? "xl:h-[550px]" : "xl:h-[500px]"
+      } ${scale ? "xl:scale-105" : ""}`}
     >
       <div className="card-content px-5 flex flex-col items-center py-5 gap-5">
         <h1 className={`uppercase font-bold text-2xl ${textColor}`}>{name}</h1>
