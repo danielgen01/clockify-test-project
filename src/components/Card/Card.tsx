@@ -9,7 +9,8 @@ type cardprops = {
   scale: boolean
   textArray: any
   secondPriceFigure: string
-  keepOnPrivateVisible: boolean
+  keepOnPrivateVisible: boolean,
+  description:string
 }
 
 const Card: React.FC<cardprops> = ({
@@ -22,6 +23,7 @@ const Card: React.FC<cardprops> = ({
   textArray,
   secondPriceFigure,
   keepOnPrivateVisible,
+  description
 }) => {
   return (
     <section
@@ -31,8 +33,8 @@ const Card: React.FC<cardprops> = ({
     >
       <div className="card-content px-5 flex flex-col items-center py-5 gap-5">
         <h1 className={`uppercase font-bold text-2xl ${textColor}`}>{name}</h1>
-        <p className={`text-[#3D4853] font-semibold ${textColor}`}>
-          Administration
+        <p className={` font-semibold ${textColor}`}>
+          {description}
         </p>
         <div className="flex items-center gap-8 font-bold text-sm text-[#3D4853]">
           <p className={`${textColor}`}>$ </p>

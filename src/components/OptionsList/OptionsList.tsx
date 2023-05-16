@@ -56,6 +56,7 @@ const OptionsList = () => {
         textArray={basicTestimonials}
         keepOnPrivateVisible={false}
         scale={false}
+        description="Administration"
 
       />
       <Card
@@ -68,6 +69,8 @@ const OptionsList = () => {
         textArray={standardTestiomonials}
         keepOnPrivateVisible={false}
         scale={true}
+        description="Timesheet & Billing"
+
       />
       <Card
         borderColor="border-[#EB5757]"
@@ -79,6 +82,8 @@ const OptionsList = () => {
         textArray={proTestiomonials}
         keepOnPrivateVisible={false}
         scale={false}
+        description="Profit & Productivity"
+
 
       />
       <Card
@@ -91,6 +96,8 @@ const OptionsList = () => {
         textArray={enterpriseTestiomonials}
         keepOnPrivateVisible={true}
         scale={false}
+        description="Control & Secrurity"
+
 
       />
     </div>
